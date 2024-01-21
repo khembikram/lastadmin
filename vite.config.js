@@ -13,7 +13,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
   }
 
   return {
-    base: '/lastadmin/',
+    base: 'https://khembikram.github.io/lastadmin/',
     root: '.', 
     server: {
       open: true,
