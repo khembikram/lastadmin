@@ -1,0 +1,520 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+            <div class="space-y-12">
+
+                <div>
+                    <h4 class="header-title">Alerts</h4>
+
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <div>
+                            <h6 class="font-bold mb-3">Default Alert</h6>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-success/20 border-success/20 rounded-md py-2 px-5"
+                                    id="dismiss-success"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-success">
+                                            <span class="font-bold">Well done! </span> You successfully read this
+                                            important alert message.
+                                        </div>
+                                        <button class="inline-flex5 text-success"
+                                                data-hs-remove-element="#dismiss-success"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-success/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-info/20 border-info/20 rounded-md py-2 px-5"
+                                    id="dismiss-info"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-info">
+                                            <span class="font-bold">Heads up! </span> This alert needs your attention,
+                                            but it's not super important.
+                                        </div>
+                                        <button class="inline-flex5 text-info" data-hs-remove-element="#dismiss-info"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-info/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-warning/20 border-warning/20 rounded-md py-2 px-5"
+                                    id="dismiss-warning"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-warning">
+                                            <span class="font-bold">Holy guacamole! </span> You should check in on some
+                                            of those fields below.
+                                        </div>
+                                        <button class="inline-flex5 text-warning"
+                                                data-hs-remove-element="#dismiss-warning"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-warning/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-danger/20 border-danger/20 rounded-md py-2 px-5"
+                                    id="dismiss-danger"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-danger">
+                                            <span class="font-bold">Oh snap! </span>Change a few things up and try
+                                            submitting again.
+                                        </div>
+                                        <button class="inline-flex5 text-danger"
+                                                data-hs-remove-element="#dismiss-danger"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-danger/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Default Alert end -->
+
+                        <div>
+                            <h4 class="font-bold mb-3">Icon Examples</h4>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-success/20 border-success/20 rounded-md py-2 px-5"
+                                    id="dismiss-icon-success"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-success">
+                                            <i class="mdi mdi-check-all me-2"></i>
+                                            <span class="font-bold">Well done! </span> You successfully read this
+                                            important alert message.
+                                        </div>
+                                        <button class="inline-flex5 text-success"
+                                                data-hs-remove-element="#dismiss-icon-success"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-success/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-info/20 border-info/20 rounded-md py-2 px-5"
+                                    id="dismiss-icon-info"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-info">
+                                            <i class="mdi mdi-information me-2"></i>
+                                            <span class="font-bold">Heads up! </span> This alert needs your attention,
+                                            but it's not super important.
+                                        </div>
+                                        <button class="inline-flex5 text-info"
+                                                data-hs-remove-element="#dismiss-icon-info"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-info/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-warning/20 border-warning/20 rounded-md py-2 px-5"
+                                    id="dismiss-icon-warning"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-warning">
+                                            <i class="mdi mdi-alert me-2"></i>
+                                            <span class="font-bold">Holy guacamole! </span> You should check in on some
+                                            of those fields below.
+                                        </div>
+                                        <button class="inline-flex5 text-warning"
+                                                data-hs-remove-element="#dismiss-icon-warning"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-warning/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border bg-danger/20 border-danger/20 rounded-md py-2 px-5"
+                                    id="dismiss-icon-danger"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-danger">
+                                            <i class="mdi mdi-block-helper me-2"></i>
+                                            <span class="font-bold">Oh snap! </span>Change a few things up and try
+                                            submitting again.
+                                        </div>
+                                        <button class="inline-flex5 text-danger"
+                                                data-hs-remove-element="#dismiss-icon-danger"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-danger/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Icon Examples end -->
+
+                        <div>
+                            <h4 class="font-bold mb-3">Default Alert (White)</h4>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-success/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-white-success"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-success">
+                                            <span class="font-bold">Well done! </span> You successfully read this
+                                            important alert message.
+                                        </div>
+                                        <button class="inline-flex5 text-success"
+                                                data-hs-remove-element="#dismiss-example-white-success"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-success/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-info/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-white-info"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-info">
+                                            <span class="font-bold">Heads up! </span> This alert needs your attention,
+                                            but it's not super important.
+                                        </div>
+                                        <button class="inline-flex5 text-info"
+                                                data-hs-remove-element="#dismiss-example-white-info"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-info/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-warning/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-white-warning"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-warning">
+                                            <span class="font-bold">Holy guacamole! </span> You should check in on some
+                                            of those fields below.
+                                        </div>
+                                        <button class="inline-flex5 text-warning"
+                                                data-hs-remove-element="#dismiss-example-white-warning"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-warning/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-danger/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-white-danger"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-danger">
+                                            <span class="font-bold">Oh snap! </span>Change a few things up and try
+                                            submitting again.
+                                        </div>
+                                        <button class="inline-flex5 text-danger"
+                                                data-hs-remove-element="#dismiss-example-white-danger"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-danger/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Default Alert (White) end -->
+
+                        <div>
+                            <h4 class="font-bold mb-3">Icon Examples (White)</h4>
+
+                            <div class="space-y-4">
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-success/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-icon-white-success"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-success">
+                                            <i class="mdi mdi-check-all me-2"></i>
+                                            <span class="font-bold">Well done! </span> You successfully read this
+                                            important alert message.
+                                        </div>
+                                        <button class="inline-flex5 text-success"
+                                                data-hs-remove-element="#dismiss-example-icon-white-success"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-success/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-info/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-icon-white-info"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-info">
+                                            <i class="mdi mdi-information me-2"></i>
+                                            <span class="font-bold">Heads up! </span> This alert needs your attention,
+                                            but it's not super important.
+                                        </div>
+                                        <button class="inline-flex5 text-info"
+                                                data-hs-remove-element="#dismiss-example-icon-white-info"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-info/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-warning/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-icon-white-warning"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-warning">
+                                            <i class="mdi mdi-alert me-2"></i>
+                                            <span class="font-bold">Holy guacamole! </span> You should check in on some
+                                            of those fields below.
+                                        </div>
+                                        <button class="inline-flex5 text-warning"
+                                                data-hs-remove-element="#dismiss-example-icon-white-warning"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-warning/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 border border-danger/20 rounded-md py-2 px-5"
+                                    id="dismiss-example-icon-white-danger"
+                                    role="alert">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-danger">
+                                            <i class="mdi mdi-block-helper me-2"></i>
+                                            <span class="font-bold">Oh snap! </span>Change a few things up and try
+                                            submitting again.
+                                        </div>
+                                        <button class="inline-flex5 text-danger"
+                                                data-hs-remove-element="#dismiss-example-icon-white-danger"
+                                                type="button">
+                                            <span class="sr-only">Dismiss</span>
+                                            <i class="mdi mdi-close-thick text-danger/60"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Icon Examples (White) end -->
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h4 class="header-title">Sweet Alert 2</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with
+                            support for multiple sizes, states, and more.</p>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="-m-1.5 overflow-x-auto">
+                            <div class="p-1.5 min-w-full inline-block align-middle">
+                                <div class="overflow-hidden">
+                                    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600/50">
+                                        <thead>
+                                        <tr class="border-t border-b-2 border-gray-200 dark:border-gray-600/50">
+                                            <th class="px-5 py-3 text-start text-xs font-semibold text-gray-500 dark:text-white"
+                                                scope="col">
+                                                Alert Type
+                                            </th>
+                                            <th class="px-5 py-3 text-start text-xs font-semibold text-gray-500 dark:text-white"
+                                                scope="col">
+                                                Example
+                                            </th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody class="divide-y divide-gray-200 dark:divide-gray-600/50">
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A basic message</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-basic"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A title with a text under</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-title"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A success message!</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-success"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A warning message, with a function
+                                                attached to the "Confirm"-button...
+                                            </td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-warning"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">By passing a parameter, you can
+                                                execute something else for "Cancel".
+                                            </td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-params"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A message with custom Image Header
+                                            </td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-image"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A message with auto close timer</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="sa-close"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">Custom HTML description and
+                                                buttons
+                                            </td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="custom-html-alert"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">A message with custom width, padding
+                                                and background
+                                            </td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm"
+                                                        id="custom-padding-width-alert"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">Ajax request example</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="ajax-alert"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">Chaining modals (queue) example</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="chaining-alert"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-5 py-3 whitespace-nowrap">Dynamic queue example</td>
+                                            <td class="px-5 py-3 whitespace-nowrap">
+                                                <button class="btn bg-primary text-white btn-sm" id="dynamic-alert"
+                                                        type="button">Click me
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+<script src="assets/js/pages/sweet-alerts.init.js" type="module"></script>
+
+</body>
+
+</html>

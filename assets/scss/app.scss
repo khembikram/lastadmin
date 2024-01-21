@@ -1,0 +1,46 @@
+/*
+Template Name: Simple - Tailwind HTML Admin Dashboard Template
+Version: 1.0
+Author: CoderThemes
+Email: support@coderthemes.com
+File: Main Css File
+*/
+
+// Custom Variables
+@import "config/theme-config";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Structure
+@import "structure/sidenav";
+@import "structure/topbar";
+
+// Components
+@import "components/reboot";
+@import "components/buttons";
+@import "components/card";
+@import "components/forms";
+@import "components/print";
+@import "components/helper";
+
+// Plugins (Extended UI Components) 
+@import "plugins/simplebar";
+@import "plugins/glightbox";
+@import "plugins/select2";
+@import "plugins/selectize";
+@import "plugins/multiple-select";
+@import "plugins/ion-rangeslider";
+@import "plugins/sweet-alert";
+@import "plugins/calendar";
+@import "plugins/parsley";
+@import "plugins/apexcharts";
+@import "plugins/morris";
+@import "plugins/range-slider";
+@import "plugins/flatpicker";
+@import "plugins/quilljs";
+@import "plugins/gridjs";
+@import "plugins/x-editable";
+@import "plugins/vector-maps";
+@import "plugins/google-map";

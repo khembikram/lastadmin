@@ -1,0 +1,49 @@
+//
+// ion-rangeslider.scss
+//
+.irs--modern {
+
+  .irs-bar,
+  .irs-to,
+  .irs-from,
+  .irs-single {
+    @apply bg-primary;
+  }
+
+  .irs-to,
+  .irs-from,
+  .irs-single {
+    &:before {
+      @apply border-t-primary;
+    }
+  }
+
+  .irs-line {
+    @apply bg-gray-300 border-gray-300;
+  }
+
+  .irs-min,
+  .irs-max {
+    @apply text-gray-500 bg-gray-300;
+  }
+
+  .irs-grid-text {
+    @apply text-xs text-gray-400;
+  }
+
+  .irs-handle {
+    >i {
+      &:nth-child(1) {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .irs-bar {
+    top: 25px;
+    height: 5px;
+    background: transparent;
+    @apply bg-primary;
+  }
+}

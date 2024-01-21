@@ -1,0 +1,408 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Widgets"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+                <h4 class="header-title">Widgets</h4>
+
+                <div class="grid xl:grid-cols-3 sm:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h6 class="text-xs font-bold uppercase">Product Sold</h6>
+                                <button class="btn bg-primary text-white btn-sm">View</button>
+                            </div>
+
+                            <h2 class="text-3xl my-2">1,890</h2>
+
+                            <div class="flex w-full h-[5px] bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700 mt-6">
+                                <div class="flex flex-col justify-center overflow-hidden bg-warning" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="flex flex-col justify-center overflow-hidden bg-warning/10" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h6 class="text-xs font-bold uppercase">Average Price</h6>
+                                <button class="btn bg-primary text-white btn-sm">View</button>
+                            </div>
+
+                            <h2 class="text-3xl my-2">$22.56</h2>
+
+                            <div class="flex w-full h-[5px] bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700 mt-6">
+                                <div class="flex flex-col justify-center overflow-hidden bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="flex flex-col justify-center overflow-hidden bg-success/10" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h6 class="text-xs font-bold uppercase">Orders</h6>
+                                <button class="btn bg-primary text-white btn-sm">View</button>
+                            </div>
+
+                            <h2 class="text-3xl my-2">9,254</h2>
+
+                            <div class="flex w-full h-[5px] bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700 mt-6">
+                                <div class="flex flex-col justify-center overflow-hidden bg-primary" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="flex flex-col justify-center overflow-hidden bg-primary/10" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h6 class="font-bold">Income status</h6>
+
+                                <div class="hs-tooltip inline-block [--placement:bottom]">
+                                    <button type="button" class="hs-tooltip-toggle">
+                                        <i class="fa fa-info-circle"></i>
+
+                                        <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-3 font-medium bg-gray-900 text-white rounded shadow" role="tooltip">
+                                            Tooltip on bottom
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <h2 class="text-3xl text-center text-primary my-8">$31570</h2>
+
+                            <div class="flex items-center justify-between">
+                                <p>Total income: $22506</p>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa fa-caret-up text-primary"></i>
+                                    10.25%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h6 class="font-bold">Sales status</h6>
+
+                                <div class="hs-tooltip inline-block [--placement:bottom]">
+                                    <button type="button" class="hs-tooltip-toggle">
+                                        <i class="fa fa-info-circle"></i>
+
+                                        <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-3 font-medium bg-gray-900 text-white rounded shadow" role="tooltip">
+                                            Tooltip on bottom
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <h2 class="text-3xl text-center text-pink my-8">683</h2>
+
+                            <div class="flex items-center justify-between">
+                                <p>Total income: 2398</p>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa fa-caret-down text-danger"></i>
+                                    7.85%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between">
+                                <h6 class="font-bold">Income status</h6>
+
+                                <div class="hs-tooltip inline-block [--placement:bottom]">
+                                    <button type="button" class="hs-tooltip-toggle">
+                                        <i class="fa fa-info-circle"></i>
+
+                                        <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-3 font-medium bg-gray-900 text-white rounded shadow" role="tooltip">
+                                            Tooltip on bottom
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <h2 class="text-3xl text-center text-success my-8">$3652</h2>
+
+                            <div class="flex items-center justify-between">
+                                <p>Total income: $22506</p>
+                                <span class="flex items-center gap-1">
+                                    <i class="fa fa-caret-up text-primary"></i>
+                                    10.25%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="xl:col-span-3 sm:col-span-2">
+                        <div class="card">
+                            <div class="p-6">
+
+                                <div class="grid xl:grid-cols-4 sm:grid-cols-2">
+                                    <div>
+                                        <div class="text-center xl:border-e border-gray-200 dark:border-slate-500/70 p-5">
+                                            <h2 class="text-3xl font-semibold mb-3">
+                                                <i class="text-primary mdi mdi-access-point-network me-2"></i>
+                                                8954
+                                            </h2>
+
+                                            <p>Lifetime total sales</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="text-center xl:border-e border-gray-200 dark:border-slate-500/70 p-5">
+                                            <h2 class="text-3xl font-semibold mb-3">
+                                                <i class="text-teal mdi mdi-cast-variant me-2"></i>
+                                                7841
+                                            </h2>
+
+                                            <p>Income amounts</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="text-center xl:border-e border-gray-200 dark:border-slate-500/70 p-5">
+                                            <h2 class="text-3xl font-semibold mb-3">
+                                                <i class="text-info mdi mdi-black-mesa me-2"></i>
+                                                6521
+                                            </h2>
+
+                                            <p>Total users</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="text-center p-5">
+                                            <h2 class="text-3xl font-semibold mb-3">
+                                                <i class="text-danger mdi mdi-cellphone-link me-2"></i>
+                                                325
+                                            </h2>
+
+                                            <p>Total visits</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="xl:col-span-3 sm:col-span-2 col-span-1">
+                        <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-6">
+                            <div class="card">
+                                <div class="p-6">
+                                    <div class="text-center">
+                                        <img src="assets/images/users/avatar-3.jpg" class="rounded-full h-28 w-28 border border-gray-200 dark:border-slate-500/70 p-[5px] mx-auto" alt="user-img">
+                                        <h5 class="text-lg font-bold my-1">Oscar Harris</h5>
+                                        <p class=" mb-4"><i>Web Designer</i></p>
+                                    </div>
+
+                                    <p>In nec rhoncus eros Vestibulum an mattis viverra sometimes magna nec pulvinar. Maecenas pellentesque porta auguesa consectetur facilisis diam poritor purus...
+                                        <a href="#" class="text-primary font-bold">Read More</a>
+                                    </p>
+
+                                    <div class="grid sm:grid-cols-3 gap-2 mt-6">
+                                        <div class="text-center">
+                                            <h4 class="text-xl text-success font-bold mb-1">1,507</h4>
+                                            <p>Total Sales</p>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <h4 class="text-xl text-danger font-bold mb-1">916</h4>
+                                            <p>Open Compaign</p>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <h4 class="text-xl text-warning font-bold mb-1">22</h4>
+                                            <p>Daily Sales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="card bg-info text-white z-10">
+                                        <div class="p-6">
+                                            <div class="flex items-center justify-between">
+                                                <i class="fab fa-twitter fa-2x"></i>
+                                                <span class="uppercase"><b>Latest Tweets</b></span>
+                                            </div>
+
+                                            <div id="twitter-slider" class="swiper">
+                                                <div class="swiper-wrapper mb-14 mt-6">
+
+                                                    <div class="swiper-slide">
+                                                        <h3 class="text-white font-normal mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text piece of classical Latin...</h3>
+                                                        <span><small>10 March, 2017</small></span>
+                                                    </div>
+
+
+                                                    <div class="swiper-slide">
+                                                        <h3 class="text-white font-normal mb-2">Latin literature from 45 BC,making it over 2000 years old. Contrary to popular belief...</h3>
+                                                        <span><small>6 March, 2017</small></span>
+                                                    </div>
+
+
+                                                    <div class="swiper-slide">
+                                                        <h3 class="text-white font-normal mb-2">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin lit...</h3>
+                                                        <span><small>6 March, 2017</small></span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="card bg-primary text-white z-10">
+                                        <div class="p-6">
+                                            <div class="flex items-center justify-between">
+                                                <i class="fab fa-facebook-f fa-2x"></i>
+                                                <span class="uppercase"><b>Facebook Feed</b></span>
+                                            </div>
+
+                                            <div id="facebook-slider" class="swiper">
+                                                <div class="swiper-wrapper mb-14 mt-6">
+
+                                                    <div class="swiper-slide">
+                                                        <h3 class="text-white font-normal mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text piece of classical Latin...</h3>
+                                                        <span><small>10 March, 2017</small></span>
+                                                    </div>
+
+
+                                                    <div class="swiper-slide">
+                                                        <h3 class="text-white font-normal mb-2">Latin literature from 45 BC,making it over 2000 years old. Contrary to popular belief...</h3>
+                                                        <span><small>6 March, 2017</small></span>
+                                                    </div>
+
+
+                                                    <div class="swiper-slide">
+                                                        <h3 class="text-white font-normal mb-2">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin lit...</h3>
+                                                        <span><small>6 March, 2017</small></span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="card overflow-hidden">
+                                        <div class="p-6">
+                                            <a href="javascript:;" class="mx-auto text-center text-dark" style="display: block;">
+                                                <img src="assets/images/users/avatar-4.jpg" class="rounded-full h-28 w-28 border border-gray-200 dark:border-slate-500/70 p-[5px] mx-auto" alt="">
+                                                <h5 class="text-lg font-bold">Arashas Smith</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class="bg-teal text-white p-4 text-center">
+                                            <div class="grid grid-cols-3">
+                                                <div class="text-center">
+                                                    <h5 class="text-xl font-bold text-white mb-1">782</h5>
+                                                    <p>Followers</p>
+                                                </div>
+                                                <div class="text-center">
+                                                    <h5 class="text-xl font-bold text-white mb-1">834</h5>
+                                                    <p>Following</p>
+                                                </div>
+                                                <div class="text-center">
+                                                    <h5 class="text-xl font-bold text-white mb-1">2907</h5>
+                                                    <p>Likes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="card overflow-hidden">
+                                        <div class="py-20 bg-right bg-no-repeat" style="background-image: url(./assets/images/bg.jpg);"></div>
+
+                                        <div class="flex flex-wrap items-center justify-between p-4">
+                                            <div>
+                                                <h6 class="mb-1">Adhamdannaway</h6>
+                                                <p class="">Photographer</p>
+                                            </div>
+
+                                            <div class="grid grid-cols-3 gap-10">
+                                                <div class="text-center">
+                                                    <i class="mdi mdi-comment-processing"></i>
+                                                    <p>1568</p>
+                                                </div>
+                                                <div class="text-center">
+                                                    <i class="mdi mdi-thumb-up text-success"></i>
+                                                    <p>866</p>
+                                                </div>
+                                                <div class="text-center">
+                                                    <i class="mdi mdi-heart text-danger"></i>
+                                                    <p>254</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+
+
+    <script src="assets/js/pages/extended-swiper.init.js" type="module"></script>
+
+
+</body>
+
+</html>

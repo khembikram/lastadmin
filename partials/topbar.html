@@ -1,0 +1,123 @@
+<!-- Topbar Start -->
+<header class="app-header">
+  <div class="flex items-center px-3 gap-3">
+    <!-- Brand Logo -->
+    <a href="index.html" class="logo-box">
+      <!-- Light Brand Logo -->
+      <div class="logo-light">
+        <img
+          src="assets/images/logo-light.png"
+          class="logo-lg"
+          alt="Light logo"
+        />
+        <img src="assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
+      </div>
+
+      <!-- Dark Brand Logo -->
+      <div class="logo-dark">
+        <img
+          src="assets/images/logo-dark.png"
+          class="logo-lg"
+          alt="Dark logo"
+        />
+        <img src="assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
+      </div>
+    </a>
+    <!-- Sidenav Menu Toggle Button -->
+    <button id="button-toggle-menu" class="nav-link p-2">
+      <span class="sr-only">Menu Toggle Button</span>
+      <span class="flex items-center justify-center h-6 w-6">
+        <i data-lucide="menu" class="w-6 h-6 text-xl"></i>
+      </span>
+    </button>
+    
+    <div class="me-auto">
+      <span class="text-lg mx-2">Dashboard</span>
+    </div>
+
+
+    <!-- Topbar Search Input -->
+    <div class="md:flex hidden items-center relative">
+        <div
+          class="absolute inset-y-0 end-3 flex items-center pointer-events-none"
+        >
+          <i class="mdi mdi-magnify text-base text-slate-500 z-10"></i>
+        </div>
+        <input
+          type="search"
+          class="form-input pe-8 ps-4 rounded-full bg-white border-transparent focus:border-transparent placeholder:opacity-60"
+          placeholder="Search..."
+        />
+      </div>
+    <!-- Profile Dropdown Button -->
+    <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
+      <button
+        id="hs-dropdown-default"
+        type="button"
+        class="hs-dropdown-toggle nav-link flex items-center"
+      >
+        <img
+          src="assets/images/users/avatar-4.jpg"
+          alt="user-image"
+          class="rounded-full h-8 w-8"
+        />
+        <div class="lg:flex hidden">
+          <span class="text-sm mx-2">Last Admin</span>
+          <i class="mdi mdi-chevron-down"></i>
+        </div>
+      </button>
+
+      <div
+        class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] hs-dropdown-open:opacity-100 opacity-0 hidden z-10 mt-2 min-w-[10rem] bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-500/70 shadow-md rounded py-2"
+        aria-labelledby="hs-dropdown-default"
+      >
+        <h6 class="py-2 px-5">Welcome !</h6>
+
+        <a
+          class="flex items-center gap-x-3.5 py-2 px-5 text-sm hover:bg-gray-100 dark:hover:bg-slate-500/30"
+          href="extras-profile.html"
+        >
+          <i data-lucide="user" class="w-4 h-4 me-2"></i>
+          <span>My Account</span>
+        </a>
+        <a
+          class="flex items-center gap-x-3.5 py-2 px-5 text-sm hover:bg-gray-100 dark:hover:bg-slate-500/30"
+          href="extras-profile.html"
+        >
+          <i data-lucide="settings" class="w-4 h-4 me-2"></i>
+          <span>Settings</span>
+        </a>
+        <a
+          class="flex items-center gap-x-3.5 py-2 px-5 text-sm hover:bg-gray-100 dark:hover:bg-slate-500/30"
+          href="pages-login.html"
+        >
+          <i data-lucide="lock" class="w-4 h-4 me-2"></i>
+          <span>Lock Screen</span>
+        </a>
+        <hr class="my-2 border-gray-200 dark:border-gray-700" />
+        <a
+          class="flex items-center gap-x-3.5 py-2 px-5 text-sm hover:bg-gray-100 dark:hover:bg-slate-500/30"
+          href="pages-login.html"
+        >
+          <i data-lucide="log-out" class="w-4 h-4 me-2"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Customization Button -->
+    <div class="flex">
+      <button
+        type="button"
+        class="nav-link p-2"
+        data-hs-overlay="#theme-customization"
+      >
+        <span class="sr-only">Customization Button</span>
+        <span class="flex items-center justify-center h-6 w-6">
+          <i data-lucide="settings"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Topbar End -->

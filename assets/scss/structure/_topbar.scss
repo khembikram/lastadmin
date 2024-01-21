@@ -1,0 +1,70 @@
+//
+// _topbar.scss
+//
+
+.p-6 {
+    background-color: #ebdfd7 !important;
+}
+.app-header {
+    @apply sticky top-0;
+    z-index: 35;
+    background: #ebdfd7;
+    height: var(--tw-topbar-height);
+
+    .nav-link {
+        color: var(--tw-topbar-item-color);
+        height: var(--tw-topbar-height);
+        @apply rounded-full transition-all ease-in-out;
+
+        &:hover {
+            color: var(--tw-topbar-item-hover-color);
+        }
+
+        &:is(.open, .show, .active, :active, :focus) {
+            color: var(--tw-topbar-item-active-color);
+        }
+    }
+
+    .logo-box {
+        @apply xl:hidden;
+
+        .logo-lg {
+            @apply md:block hidden;
+        }
+
+        .logo-sm {
+            @apply md:hidden block;
+        }
+    }
+
+    .form-input,
+    .form-input::placeholder,
+    .mdi-magnify,
+    .page-title {
+        @apply text-slate-900;
+    }
+}
+
+
+
+// Topbar Logo
+html[data-mode="dark"],
+html[data-topbar-color="dark"] {
+    .app-header {
+        .logo-box {
+            .logo-light {
+                display: block;
+            }
+
+            .logo-dark {
+                display: none;
+            }
+        }
+
+        .form-input,
+        .form-input::placeholder,
+        .mdi-magnify {
+            @apply text-slate-100 bg-slate-700 border-slate-500/30 ;
+        }
+    }
+}

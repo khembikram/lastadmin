@@ -1,0 +1,58 @@
+  /* =========== */
+/* Sweet Alert */
+/* =========== */
+
+.swal2-container {
+  font-family: inherit;
+
+  .swal2-title {
+    @apply text-xl font-medium dark:text-white ;
+  }
+}
+
+.swal2-icon {
+  &.swal2-question {
+    @apply border-primary text-primary;
+  }
+}
+
+.swal2-popup {
+  @apply bg-white dark:bg-slate-700 ;
+
+  .swal2-content {
+    @apply text-sm text-gray-400 dark:text-gray-300 ;
+
+    .swal2-input{
+      @apply dark:bg-transparent focus:ring-0 focus:border-gray-600/50 border-gray-200 dark:border-gray-600/50 ;
+    }
+  }
+
+  .swal2-styled {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.swal2-icon {
+  &.swal2-success {
+    .swal2-success-ring {
+      @apply border-success ;
+    }
+
+    [class^=swal2-success-line] {
+      @apply bg-success ;
+
+    }
+  }
+}
+
+.swal2-actions{
+  .swal2-confirm{
+    @apply text-sm leading-4 bg-primary text-white ;
+  }
+
+  .swal2-cancel {
+    @apply text-sm leading-4 bg-danger text-white ;
+  }
+}

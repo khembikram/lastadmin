@@ -1,0 +1,17 @@
+//
+// buttons.scss
+//
+
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center text-center rounded border border-transparent px-4 py-2 text-sm transition-all font-normal;
+
+        &.btn-lg {
+            @apply text-lg rounded-lg;
+        }
+
+        &.btn-sm {
+            @apply py-1 px-3 text-sm;
+        }
+    }
+}

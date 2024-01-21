@@ -1,0 +1,22 @@
+//
+// _card.scss
+//
+
+@layer components {
+
+    .card {
+        @apply relative bg-white dark:bg-slate-700 border rounded border-gray-200 dark:border-slate-500/70 h-fit;
+    }
+
+    .card-header{
+        @apply px-6 py-3 ;
+    }
+
+    .header-title {
+        @apply text-base font-bold border-b border-gray-200 dark:border-slate-500/70 text-[#626773] pb-3 mb-4;
+    }
+
+    .sub-header {
+        @apply mb-6 text-slate-400 text-[13px] ;
+    }
+}

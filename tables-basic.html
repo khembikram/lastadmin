@@ -1,0 +1,675 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+                <div class="card">
+                    <div class="p-6">
+                        <h4 class="header-title mb-6">Basic Tables</h4>
+
+                        <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-12">
+                            <div>
+                                <div>
+                                    <h6 class="mb-2">Basic Example</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                    <thead>
+                                                        <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@fat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Striped rows</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                    <thead>
+                                                        <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                        <tr class="even:bg-white odd:bg-gray-100 dark:even:bg-gray-700 dark:odd:bg-gray-600/40">
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap ">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@mdo</td>
+                                                        </tr>
+                                                        <tr class="even:bg-white odd:bg-gray-100 dark:even:bg-slate-700 dark:odd:bg-slate-600/40">
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap ">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@fat</td>
+                                                        </tr>
+                                                        <tr class="even:bg-white odd:bg-gray-100 dark:even:bg-gray-700 dark:odd:bg-gray-600/40">
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap ">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Bordered Table</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30 border border-gray-200 dark:border-slate-500/30">
+                                                    <thead>
+                                                        <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white border-s border-gray-200 dark:border-slate-500/30">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white border-s border-gray-200 dark:border-slate-500/30">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white border-s border-gray-200 dark:border-slate-500/30">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">@fat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap border-s border-gray-200 dark:border-slate-500/30">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Hover rows</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                    <thead>
+                                                        <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                        <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-600/40">
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@mdo</td>
+                                                        </tr>
+                                                        <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-600/40">
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@fat</td>
+                                                        </tr>
+                                                        <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-600/40">
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Inverse Table</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col bg-black/80">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-600/80 dark:divide-gray-600">
+                                                    <thead>
+                                                        <tr class="border-t border-b-2 border-gray-600/80">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-600/80">
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap text-gray-300">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap text-gray-300">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">@fat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap text-gray-300">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Table Head Options</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                    <thead class="bg-gray-200 dark:bg-gray-600">
+                                                        <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@fat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Responsive Table</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                    <thead>
+                                                        <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Table heading</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Table heading</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Table heading</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Table heading</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Table heading</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Table heading</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Table cell</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                                    <div class="flex flex-col gap-12">
+                                        <div>
+                                            <div class="mb-6">
+                                                <h6 class="mb-2">Small Table</h6>
+                                                <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                            </div>
+
+                                            <div class="flex flex-col">
+                                                <div class="-m-1.5 overflow-x-auto">
+                                                    <div class="p-1.5 min-w-full inline-block align-middle">
+                                                        <div class="overflow-hidden">
+                                                            <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                                <thead>
+                                                                    <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                                        <th scope="col" class="px-2.5 py-1.5 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                                        <th scope="col" class="px-2.5 py-1.5 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                                        <th scope="col" class="px-2.5 py-1.5 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                                        <th scope="col" class="px-2.5 py-1.5 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                                    </tr>
+                                                                </thead>
+
+                                                                <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                                    <tr>
+                                                                        <th class="px-2.5 py-1.5 text-start whitespace-nowrap">1</th>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">Mark</td>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">Otto</td>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="px-2.5 py-1.5 text-start whitespace-nowrap">2</th>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">Jacob</td>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">Thornton</td>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="px-2.5 py-1.5 text-start whitespace-nowrap">3</th>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">Larry</td>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">the Bird</td>
+                                                                        <td class="px-2.5 py-1.5 whitespace-nowrap">@twitter</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="mb-6">
+                                                <h6 class="mb-2">Captions</h6>
+                                                <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                            </div>
+
+                                            <div class="flex flex-col">
+                                                <div class="-m-1.5 overflow-x-auto">
+                                                    <div class="p-1.5 min-w-full inline-block align-middle">
+                                                        <div class="overflow-hidden">
+                                                            <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                                <caption class="py-3 text-start caption-bottom">List of users</caption>
+
+                                                                <thead>
+                                                                    <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                                    </tr>
+                                                                </thead>
+
+                                                                <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                                    <tr>
+                                                                        <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">Mark</td>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">Otto</td>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">Jacob</td>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">Thornton</td>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">Larry</td>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">the Bird</td>
+                                                                        <td class="px-4 py-3 whitespace-nowrap">@twitter</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="mb-6">
+                                            <h6 class="mb-2">Contextual classes</h6>
+                                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                        </div>
+
+                                        <div class="flex flex-col">
+                                            <div class="-m-1.5 overflow-x-auto">
+                                                <div class="p-1.5 min-w-full inline-block align-middle">
+                                                    <div class="overflow-hidden">
+                                                        <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                            <thead>
+                                                                <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                                    <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                                    <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Column heading</th>
+                                                                    <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Column heading</th>
+                                                                    <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Column heading</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                                <tr class="bg-gray-200 dark:bg-gray-300 dark:text-black">
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr class="bg-success/30">
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">4</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr class="bg-info/30">
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">5</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">6</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr class="bg-warning/30">
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">7</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">8</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                                <tr class="bg-danger/30">
+                                                                    <th class="px-4 py-3 text-start whitespace-nowrap">9</th>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                    <td class="px-4 py-3 whitespace-nowrap">Column content</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Borderless Table</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@fat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-6">
+                                    <h6 class="mb-2">Borderless Inverse table</h6>
+                                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                                </div>
+
+                                <div class="flex flex-col bg-black/80">
+                                    <div class="-m-1.5 overflow-x-auto">
+                                        <div class="p-1.5 min-w-full inline-block align-middle">
+                                            <div class="overflow-hidden">
+                                                <table class="min-w-full">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">#</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">First Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">Last Name</th>
+                                                            <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold text-white">Username</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap text-gray-300">1</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Mark</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Otto</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap text-gray-300">2</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Jacob</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Thornton</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">@fat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="px-4 py-3 text-start whitespace-nowrap text-gray-300">3</th>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">Larry</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">the Bird</td>
+                                                            <td class="px-4 py-3 whitespace-nowrap text-gray-300">@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+
+</body>
+
+</html>

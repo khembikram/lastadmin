@@ -1,0 +1,68 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+
+<body>
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="relative bg-cover bg-center">
+        <div class="relative flex flex-col my-12 pt-12">
+            <div class="flex justify-center">
+                <div class="px-4">
+                    <div class="card overflow-hidden xl:w-[33rem] sm:w-96">
+                        <div class="p-9">
+
+                            <div class="mb-6 mt-2">
+                                <a href="index.html">
+                                    <img src="assets/images/logo-dark.png" alt="" class="h-8 mx-auto block dark:hidden">
+                                    <img src="assets/images/logo-light.png" alt="" class="h-8 mx-auto hidden dark:block">
+                                </a>
+                            </div>
+
+                            <div class="text-center mb-4">
+                                <div class="mt-4 pt-1">
+                                    <img src="assets/images/users/avatar-4.jpg" class="rounded-full border border-gray-200 p-[3px] mx-auto" alt="thumbnail" style="height:88px;">
+                                </div>
+                                <p class="mt-3">Enter your password to access the admin. </p>
+                            </div>
+
+                            <form action="#" class="py-2">
+                                <div class="mb-4">
+                                    <label class="mt-1 mb-2" for="password">Password</label>
+                                    <input class="form-input" type="password" required="" id="password" placeholder="Enter your password">
+                                </div>
+
+                                <div class="text-center mb-2">
+                                    <button class="btn bg-primary w-full text-white" type="submit"> Unlock </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-6">
+                        <p>Not you? return
+                            <a href="pages-login.html" class="ms-1 font-bold">
+                                Sign In</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+    {{> footer-scripts}}
+
+</body>
+
+</html>

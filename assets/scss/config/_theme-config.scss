@@ -1,0 +1,81 @@
+// 
+// _theme-config.scss (:root variable)
+// 
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// ===================================================== //
+// ======= Real Time Customistion :root Variable ======= //
+// ===================================================== //
+
+:root {
+    --tw-body-font-family:           theme(fontFamily.base);
+    --tw-body-bg:                    theme(backgroundColor.slate.100);
+    --tw-body-color:                 theme(colors.slate.800);   
+
+    &:is([data-mode="dark"]) {
+        --tw-body-bg:                    theme(backgroundColor.slate.800);
+        --tw-body-color:                 theme(colors.slate.100);
+    }
+
+    --tw-sidenav-width:             240px;
+    --tw-sidenav-width-md:          160px;
+    --tw-sidenav-width-sm:           70px;
+
+    --tw-topbar-height:              70px;
+
+    --tw-menu-item-padding-x:        10px;
+    --tw-menu-item-gap:               5px;
+
+    --tw-menu-link-padding-x:        15px;
+    --tw-menu-link-padding-y:        13px;
+
+    --tw-menu-link-item-gap:         10px;
+
+    --tw-menu-item-icon-size:        18px;
+    --tw-menu-item-font-size:        14px;
+}
+
+// Light Menu
+html[data-sidenav-color="light"] {
+    --tw-menu-bg:                               white;
+    --tw-menu-item-color:                       #797979;
+    --tw-menu-item-active-color:                theme(colors.primary);
+    --tw-menu-item-hover-color:                 theme(colors.primary);
+}
+
+// Dark Menu
+html[data-sidenav-color="dark"],
+html[data-mode="dark"][data-sidenav-color="light"] {
+    --tw-menu-bg:                               theme(backgroundColor.slate.700);
+    --tw-menu-item-color:                       rgb(144, 151, 167);
+    --tw-menu-item-active-color:                rgb(200, 205, 220);
+    --tw-menu-item-hover-color:                 rgb(200, 205, 220);
+}
+
+// Brand Menu
+html[data-sidenav-color="brand"] {
+    --tw-menu-bg:                             theme(backgroundColor.primary);
+    --tw-menu-item-color:                     theme(colors.gray.100);
+    --tw-menu-item-active-color:              theme(colors.white);
+    --tw-menu-item-hover-color:               theme(colors.white);
+}
+
+// Light Topbar
+html[data-topbar-color="light"] {
+    --tw-topbar-bg:                           theme(backgroundColor.gray.100);
+    --tw-topbar-item-color:                   rgb(108, 117, 125);
+    --tw-topbar-item-active-color:            theme(backgroundColor.primary);
+    --tw-topbar-item-hover-color:             theme(backgroundColor.primary);
+}
+
+// Dark Topbar
+html[data-topbar-color="dark"],
+html[data-mode="dark"][data-topbar-color="light"] {
+    --tw-topbar-bg:                           theme(backgroundColor.slate.800);
+    --tw-topbar-item-color:                   rgb(131, 145, 162);
+    --tw-topbar-item-active-color:            rgb(188, 206, 228);
+    --tw-topbar-item-hover-color:             rgb(188, 206, 228);
+}

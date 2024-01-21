@@ -1,0 +1,132 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Calendar"}}
+
+    {{> head-css}}
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        {{> sidenav}}
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="page-content bg-white dark:bg-slate-700">
+
+            {{> topbar}}
+
+            <main class="p-6">
+
+                <div class="grid lg:grid-cols-4 gap-6">
+
+                    <div>
+                        <div>
+                            <button class="px-3 py-2 rounded bg-danger text-white text-lg w-full mb-10" id="btn-new-event" data-hs-overlay="#create-new-modal"><i class="mdi mdi-plus-thick text-xl"></i> Create New</button>
+
+                            <div id="create-new-modal" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+                                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all lg:max-w-lg lg:w-full m-3 lg:mx-auto">
+                                    <div class="flex flex-col bg-white border shadow-sm rounded dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                                        <div class="flex justify-between items-center py-2.5 px-4 border-b border-gray-200">
+                                            <h3 class="text-base font-semibold">
+                                                Add a category
+                                            </h3>
+
+                                            <button type="button" class="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 dark:text-gray-200" data-hs-overlay="#create-new-modal">
+                                                <span class="sr-only">Close</span>
+                                                <i class="mdi mdi-close-thick text-base"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="p-4 overflow-y-auto">
+                                            <div class="grid grid-cols-2 gap-6">
+                                                <div>
+                                                    <label>Category Name</label>
+                                                    <input class="form-input" placeholder="Enter name" type="text" name="category-name" />
+                                                </div>
+                                                <div>
+                                                    <label>Choose Category Color</label>
+                                                    <select class="form-input" data-placeholder="Choose a color..." name="category-color">
+                                                        <option value="success">Success</option>
+                                                        <option value="danger">Danger</option>
+                                                        <option value="info">Info</option>
+                                                        <option value="pink">Pink</option>
+                                                        <option value="primary">Primary</option>
+                                                        <option value="warning">Warning</option>
+                                                        <option value="orange">Orange</option>
+                                                        <option value="brown">Brown</option>
+                                                        <option value="teal">Teal</option>
+                                                        <option value="inverse">Inverse</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex items-center justify-end gap-2 mt-5">
+                                                <button type="button" class="btn bg-secondary text-white" data-hs-overlay="#create-new-modal">Close</button>
+                                                <button type="button" class="btn bg-danger text-white">Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1" id="external-events">
+                            <p class="text-gray-400 dark:text-gray-300 mb-4">Drag and drop your event or click in the calendar</p>
+
+                            <button class="external-event bg-success text-white px-3 py-2 rounded font-medium text-start w-full mb-2" data-class="bg-success">
+                                <i class="mdi mdi-checkbox-blank-circle me-3"></i>New Theme Release
+                            </button>
+                            <button class="external-event bg-info text-white px-3 py-2 rounded font-medium text-start w-full mb-2" data-class="bg-info">
+                                <i class="mdi mdi-checkbox-blank-circle me-3"></i>My Event
+                            </button>
+                            <button class="external-event bg-warning text-white px-3 py-2 rounded font-medium text-start w-full mb-2" data-class="bg-warning">
+                                <i class="mdi mdi-checkbox-blank-circle me-3"></i>Meet manager
+                            </button>
+                            <button class="external-event bg-purple text-white px-3 py-2 rounded font-medium text-start w-full mb-2" data-class="bg-danger">
+                                <i class="mdi mdi-checkbox-blank-circle me-3"></i>Create New theme
+                            </button>
+                        </div>
+
+                        <div class="flex items-center gap-2 mt-5">
+                            <input type="checkbox" class="form-checkbox rounded text-primary bg-white dark:bg-transparent" id="customCheck1">
+                            <label class="my-0" for="customCheck1">Remove after drop</label>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-3">
+                        <div id="calendar" class="mt-5 mt-xl-0"></div>
+                    </div>
+
+                </div>
+
+            </main>
+
+            {{> footer}}
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+
+
+    {{> customizer}}
+
+
+    {{> footer-scripts}}
+
+    <script src="assets/js/pages/calendar.init.js" type="module"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+//
+// _apexcharts.scss
+//
+
+
+.morris-chart {
+    text {
+        font-family: var(--tw-body-font-family) !important;
+        @apply fill-[#797979] dark:fill-[#cbd5e1];
+    }
+}
+
+.morris-hover {
+    position: absolute;
+    z-index: 10;
+
+    &.morris-default-style {
+        font-family: var(--tw-body-font-family);
+        @apply text-xs bg-[#f7f7f7] dark:bg-gray-700/70 text-[#626773] dark:text-[#cbd5e1] text-center rounded border-2 border-slate-100 dark:border-gray-600/50 px-3 py-2;
+
+        .morris-hover-row-label {
+            margin: 0.25em 0;
+            font-family: var(--tw-body-font-family);
+            @apply font-bold;
+        }
+
+        .morris-hover-point {
+            margin: 0.1em 0;
+            @apply text-[#497fff] dark:text-gray-400 whitespace-nowrap;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="relative bg-cover bg-center">
+        <div class="relative flex flex-col my-12 pt-12">
+            <div class="flex justify-center">
+                <div class="px-4">
+                    <div class="card overflow-hidden xl:w-[36rem] sm:w-96">
+                        <div class="p-9">
+                            <div class="mb-6 mt-2">
+                                <a href="index.html">
+                                    <img src="assets/images/logo-dark.png" alt="" class="h-8 mx-auto block dark:hidden">
+                                    <img src="assets/images/logo-light.png" alt="" class="h-8 mx-auto hidden dark:block">
+                                </a>
+                            </div>
+
+                            <div class="mt-6 pt-4 text-center">
+                                <img src="assets/images/success.svg" title="invite.svg" class="h-16 w-16 mx-auto">
+                                <p class="mt-6 mb-2"> A email has been send to <b>youremail@domain.com</b>. Please check for an email from company bing and click on the included link to reset your password. </p>
+                            </div>
+
+                            <div class="text-center mt-6 mb-2">
+                                <a href="index.html" class="btn bg-primary w-full text-white" type="submit"> Back to Home </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+    {{> footer-scripts}}
+
+</body>
+
+</html>

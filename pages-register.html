@@ -1,0 +1,80 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+
+<body>
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="relative bg-cover bg-center">
+        <div class="relative flex flex-col my-12 pt-12">
+            <div class="flex justify-center">
+                <div class="px-4">
+                    <div class="card overflow-hidden">
+                        <div class="p-9">
+
+                            <div class="mb-6 mt-2">
+                                <a href="index.html">
+                                    <img src="assets/images/logo-dark.png" alt="" class="h-8 mx-auto block dark:hidden">
+                                    <img src="assets/images/logo-light.png" alt="" class="h-8 mx-auto hidden dark:block">
+                                </a>
+                            </div>
+
+                            <form action="#" class="xl:w-[30rem] sm:w-96 py-2">
+                                <div class="mb-4">
+                                    <label class="mt-1 mb-2" for="username">Name</label>
+                                    <input class="form-input" type="text" id="username" required="" placeholder="Michael Zenaty">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mt-1 mb-2" for="emailaddress">Email address</label>
+                                    <input class="form-input" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mt-1 mb-2" for="password">Password</label>
+                                    <input type="password" id="password" class="form-input" placeholder="Enter your password">
+                                </div>
+
+                                <div class="mb-10">
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" class="form-checkbox rounded text-primary" id="checkbox-signin">
+                                        <label class="font-medium my-0" for="checkbox-signin">I accept
+                                            <a href="#" class="text-primary">Terms and Conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mb-2">
+                                    <button class="btn bg-primary w-full text-white" type="submit"> Sign Up Free </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-6">
+                        <p>Already have an account?
+                            <a href="pages-login.html" class="ms-1 font-bold">
+                                Sign In</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+    {{> footer-scripts}}
+
+</body>
+
+</html>

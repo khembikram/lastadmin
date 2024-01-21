@@ -1,0 +1,209 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+                <div class="card">
+                    <div class="p-6">
+                        <h4 class="header-title">Morris Charts</h4>
+
+                        <div class="grid lg:grid-cols-2 gap-6">
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Stacked Bar Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="morris-bar-stacked" class="morris-chart" dir="ltr" style="height: 300px;"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Area Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="morris-area-example" class="morris-chart" dir="ltr" style="height: 300px;"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Line Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="morris-line-example" class="morris-chart" dir="ltr" style="height: 300px;"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Bar Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="morris-bar-example" class="morris-chart" dir="ltr" style="height: 320px;"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Area Chart with Point</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="morris-area-with-dotted" class="morris-chart" dir="ltr" style="height: 320px;"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Donut Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="morris-donut-example" class="morris-chart" dir="ltr" style="height: 320px;"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Multiple Statistics</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="website-stats" style="height: 320px;" class="flot-chart"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Realtime Statistics</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Line Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="website-stats1" style="height: 320px;" class="flot-chart"></div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Donut Pie</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="donut-chart">
+                                    <div id="donut-chart-container" class="flot-chart" style="height: 260px;"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Pie Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="pie-chart">
+                                    <div id="pie-chart-container" class="flot-chart" style="height: 260px;"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Stacked Bar chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="ordered-bars-chart" style="height: 320px;"></div>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <div class="mb-4">
+                                    <h6 class="mb-2">Line Chart</h6>
+                                    <p class="sub-header">Create stacked bar charts using Morris.Bar(options), where options is an object containing the configuration options.</p>
+                                </div>
+
+                                <div id="line-chart-alt" style="height:320px;"></div>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <h6 class="mb-4">Combine Chart</h6>
+
+                                <div id="combine-chart">
+                                    <div id="combine-chart-container" class="flot-chart" style="height: 320px;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+
+<script type="module" src="assets/libs/morris.js/morris.min.js"></script>
+<script type="module" src="assets/libs/raphael/raphael.min.js"></script>
+
+
+<script type="module" src="assets/libs/flot-charts/jquery.flot.js"></script>
+<script type="module" src="assets/libs/flot-charts/jquery.flot.time.js"></script>
+<script type="module" src="assets/libs/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+    <script type="module" src="assets/libs/jquery.flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script type="module" src="assets/libs/flot-charts/jquery.flot.resize.js"></script>
+    <script type="module" src="assets/libs/flot-charts/jquery.flot.pie.js"></script>
+    <script type="module" src="assets/libs/flot-charts/jquery.flot.selection.js"></script>
+    <script type="module" src="assets/libs/flot-charts/jquery.flot.stack.js"></script>
+    <script type="module" src="assets/libs/flot-orderbars/js/jquery.flot.orderBars.js"></script>
+    <script type="module" src="assets/libs/flot-charts/jquery.flot.crosshair.js"></script>
+    <script type="module" src="assets/libs/flot-axislabels/jquery.flot.axislabels.js"></script>
+
+    <!-- KNOB JS -->
+    <script type="module" src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+
+    <script type="module" src="assets/js/pages/flot.init.js" type="module"></script>
+
+
+</body>
+
+</html>

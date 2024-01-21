@@ -1,0 +1,32 @@
+.custom-scroll {
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:vertical {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar:horizontal {
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply rounded-lg bg-slate-300/50 dark:bg-slate-500/50;
+    }
+
+    &::-webkit-scrollbar-track {
+        @apply bg-transparent rounded-lg;
+    }
+
+    &::-webkit-scrollbar-corner {
+        @apply bg-transparent;
+    }
+}
+
+
+
+
+.swiper-pagination-bullet {
+    @apply shadow bg-white rounded-none h-[3px] w-8;
+}

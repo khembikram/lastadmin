@@ -1,0 +1,209 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+                <div class="space-y-12">
+
+                    <div>
+                        <h4 class="header-title">Typography</h4>
+
+                        <div class="space-y-4">
+                            <h1 class="text-9xl">text-9xl<span class="text-base">(128px)</span></h1>
+                            <h1 class="text-8xl">text-8xl <span class="text-base">(96px)</span></h1>
+                            <h1 class="text-7xl">text-7xl <span class="text-base"> (72px)</span></h1>
+                            <h1 class="text-6xl">text-6xl <span class="text-base">(60px)</span></h1>
+                            <h1 class="text-5xl">text-5xl <span class="text-base">(48px)</span></h1>
+                            <h1 class="text-4xl">text-4xl <span class="text-base">(36px)</span></h1>
+                            <h1 class="text-3xl">text-3xl <span class="text-base">(30px)</span></h1>
+                            <h1 class="text-2xl">text-2xl <span class="text-base">(24px)</span></h1>
+                            <h1 class="text-xl">text-xl <span class="text-base">(20px)</span></h1>
+                            <h1 class="text-lg">text-lg <span class="text-base">(18px)</span></h1>
+                            <h1 class="text-base">text-base (16px)</h1>
+                            <h1 class="text-sm">text-sm <span class="text-base">(14px)</span></h1>
+                            <h1 class="text-xs">text-xs <span class="text-base">(12px)</span></h1>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h6 class="text-base mb-6">Inline text elements</h6>
+
+                            <div class="space-y-4">
+                                <p class="underline">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="overline">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="line-through">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="no-underline">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="underline decoration-primary">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="overline decoration-success decoration-2">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="line-through decoration-danger decoration-2">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="underline decoration-solid">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="underline decoration-double">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="underline decoration-dotted">The quick brown fox jumps over the lazy dog.</p>
+                                <p class="underline decoration-wavy">The quick brown fox jumps over the lazy dog.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6 class="text-base mb-6">Contextual Text Colors</h6>
+
+                            <div class="space-y-4">
+                                <p class="text-primary">Etiam porta sem malesuada magna mollis euismod.</p>
+                                <p class="text-gray-400">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                                <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                                <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                                <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+                                <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                <p class="text-dark dark:text-light">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p class="text-teal">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+                        <div>
+                            <h6 class="text-base mb-6">Unordered</h6>
+
+                            <ul class="list-disc text-gray-400 dark:text-gray-300 space-y-1 ms-10">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ul class="list-disc text-gray-400 dark:text-gray-300 space-y-1 ms-10">
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ul>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h6 class="text-base mb-6">Ordered</h6>
+
+                            <ol class="list-decimal text-gray-400 dark:text-gray-300 space-y-1 ms-10">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ol class="list-decimal text-gray-400 dark:text-gray-300 space-y-1 ms-10">
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ol>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ol>
+                        </div>
+
+                        <div class="flex flex-col gap-6">
+                            <div>
+                                <h6 class="text-base mb-6">Unstyled</h6>
+
+                                <ul class="list-none text-gray-400 dark:text-gray-300 space-y-1">
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Integer molestie lorem at massa
+                                        <ul class="list-disc ms-10">
+                                            <li>Phasellus iaculis neque</li>
+                                        </ul>
+                                    </li>
+                                    <li>Faucibus porta lacus fringilla vel</li>
+                                    <li>Eget porttitor lorem</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h6 class="text-base mb-6">Inline</h6>
+
+                                <ul class="text-gray-400 dark:text-gray-300 space-x-2">
+                                    <li class="inline-block">Lorem ipsum</li>
+                                    <li class="inline-block">Phasellus iaculis</li>
+                                    <li class="inline-block">Nulla volutpat</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-base mb-6">Blockquotes</h4>
+
+                            <blockquote class="py-2.5 px-5 mb-5 border-s-4 border-gray-200 dark:border-gray-600/50">
+                                <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="block text-gray-400 dark:text-gray-300 mt-3"><i class="mdi mdi-minus"></i> Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+
+                        <div>
+                            <h4 class="text-base mb-6">Horizontal description</h4>
+
+                            <dl class="grid sm:grid-cols-3 gap-4">
+                                <dt class="font-medium text-black dark:text-white">Description lists</dt>
+                                <dd class="sm:col-span-2">A description list is perfect for defining terms.</dd>
+
+                                <dt class="font-medium text-black dark:text-white">Euismod</dt>
+                                <dd class="sm:col-span-2">
+                                    <p class="mb-3">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                                    <p class="mb-3">Donec id elit non mi porta gravida at eget metus.</p>
+                                </dd>
+
+                                <dt class="font-medium text-black dark:text-white">Malesuada porta</dt>
+                                <dd class="sm:col-span-2">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                                <dt class="font-medium text-black dark:text-white" class="grid-cols-1 text-truncate">Truncated term is truncated</dt>
+                                <dd class="sm:col-span-2">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+</body>
+
+</html>

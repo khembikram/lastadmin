@@ -1,0 +1,184 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Invoice"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+                <div class="mb-10">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <img src="assets/images/logo-dark.png" alt="logo-dark" class="h-6 block dark:hidden">
+                            <img src="assets/images/logo-light.png" alt="logo-light" class="h-6 hidden dark:block">
+                        </div>
+
+                        <div>
+                            <h4 class="text-2xl font-semibold">Invoice</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-14">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <p class="font-semibold mb-4">Hello, Stanley Jones</p>
+                            <p>Thanks a lot because you keep purchasing our products. Our company promises to provide high quality products for you as well as outstanding customer service for every transaction.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center sm:justify-end gap-2">
+                                <h6 class="font-semibold">Order Date:</h6>
+                                <p>Jan 17, 2023</p>
+                            </div>
+
+                            <div class="flex items-center sm:justify-end gap-2">
+                                <h6 class="font-semibold">Order Status:</h6>
+                                <p>
+                                    <span class="text-[10px] bg-success text-white font-medium rounded px-1">Paid</span>
+                                </p>
+                            </div>
+
+                            <div class="flex items-center sm:justify-end gap-2">
+                                <h6 class="font-semibold">Order ID:</h6>
+                                <p>#123456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <div class="flex flex-wrap items-center justify-between gap-6">
+                        <div>
+                            <h6 class="font-semibold text-base mb-2">Billing Address</h6>
+                            <address class="not-italic">Lynne K. Higby <br> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107 <br> P: (123) 456-7890 </address>
+                        </div>
+
+                        <div class="sm:text-end">
+                            <h6 class="font-semibold text-base mb-3">Shipping Address</h6>
+                            <address class="not-italic">Tosha Minner <br> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107 <br> P: (123) 456-7890 </address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <div class="overflow-auto">
+                        <div class="min-w-full inline-block align-middle">
+                            <div class="overflow-hidden">
+                                <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                    <thead class="border-y border-b-2 border-gray-200 dark:border-slate-500/30">
+                                        <tr>
+                                            <th scope="col" class="px-3 py-3 text-start font-semibold dark:text-gray-300">#</th>
+                                            <th scope="col" class="px-3 py-3 text-start font-semibold dark:text-gray-300">Item</th>
+                                            <th scope="col" class="px-3 py-3 text-center font-semibold dark:text-gray-300">Quantity</th>
+                                            <th scope="col" class="px-3 py-3 text-center font-semibold dark:text-gray-300">Unit Cost</th>
+                                            <th scope="col" class="px-3 py-3 text-end font-semibold dark:text-gray-300">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                        <tr>
+                                            <td class="px-3 py-3 whitespace-nowrap">1</td>
+                                            <td class="px-3 py-3 whitespace-nowrap">
+                                                <p class="font-semibold mb-0.5">Laptop</p>
+                                                <p>Brand Model VGN-TXN27N/B 11.1" Notebook PC</p>
+                                            </td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-center">1</td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-center">$1799</td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-end">$1799</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="px-3 py-3 whitespace-nowrap">2</td>
+                                            <td class="px-3 py-3 whitespace-nowrap">
+                                                <p class="font-semibold mb-0.5">Warranty</p>
+                                                <p>Two Year Extended Warranty - Parts and Labor</p>
+                                            </td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-center">3</td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-center">$499</td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-end">$1497</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="px-3 py-3 whitespace-nowrap">3</td>
+                                            <td class="px-3 py-3 whitespace-nowrap">
+                                                <p class="font-semibold mb-0.5">LED</p>
+                                                <p>80cm (32) HD Ready LED TV</p>
+                                            </td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-center">2</td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-center">$412</td>
+                                            <td class="px-3 py-3 whitespace-nowrap text-end">$824</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <p class="font-semibold mb-2">Notes:</p>
+                        <p>All accounts are to be paid within 7 days from receipt of invoice. To be paid by cheque or credit card or direct payment online. If account is not paid within 7 days the credits details supplied as confirmation of work undertaken will be charged the agreed quoted fee noted above.</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center sm:justify-end gap-2">
+                            <h6 class="font-semibold">Sub-total:</h6>
+                            <p>$4120.00</p>
+                        </div>
+
+                        <div class="flex items-center sm:justify-end gap-2">
+                            <h6 class="font-semibold">VAT (12.5):</h6>
+                            <p>$515</p>
+                        </div>
+
+                        <div class="flex items-center sm:justify-end gap-2">
+                            <h6 class="font-semibold text-2xl">$4635.00 USD</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <div class="flex justify-end gap-2 items-center print:hidden">
+                        <a href="javascript:window.print()" class="btn bg-primary text-white"><i class="fa fa-print me-2"></i> Print</a>
+                        <button type="button" class="btn bg-success text-white">Submit</button>
+                    </div>
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+</body>
+
+</html>

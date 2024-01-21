@@ -1,0 +1,4 @@
+node_modules/
+yarn.lock
+vite.config.js
+package-lock.json

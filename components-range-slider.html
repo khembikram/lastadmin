@@ -1,0 +1,119 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+<!--    <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />-->
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+                <div>
+                    <h4 class="header-title">Ion Range Slider</h4>
+                    <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_01">Default</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_01">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_02">Min-Max</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_02">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_03">Prefix</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_03">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_04">Range</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_04">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_05">Step</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_05">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_06">Custom Values</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_06">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5">
+                        <label class="mb-3 md:mb-0" for="range_07">Prettify Numbers</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_07">
+                        </div>
+                    </div>
+
+                    <div class="md:grid grid-cols-5 mb-0">
+                        <label class="mb-3 md:mb-0" for="range_08">Disabled</label>
+                        <div class="md:col-span-4">
+                            <input type="text" id="range_08">
+                        </div>
+                    </div>
+                </form>
+                <!-- form end -->
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+<!-- Ion Range Slider-->
+<!--    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>-->
+
+    <!-- Range slider init js-->
+    <script src="assets/js/pages/range-sliders.init.js" type="module"></script>
+
+
+</body>
+
+</html>

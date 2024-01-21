@@ -1,0 +1,40 @@
+//
+// reboot.scss
+//
+
+html {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--tw-body-color);
+    background-color: var(--tw-body-bg);
+    font-family: var(--tw-body-font-family);
+    -webkit-tap-highlight-color: transparent;
+    @apply antialiased font-normal text-sm leading-relaxed tracking-wide;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-semibold text-[#626773] dark:text-[#dee2e6];
+}
+
+code {
+    @apply text-[#ff8acc];
+}
+
+:root {
+    &:is([data-mode="dark"]) {
+        color-scheme: dark;
+    }
+}
+
+canvas {
+    display: inherit;
+}

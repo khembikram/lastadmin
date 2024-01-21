@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-sidenav-color="dark">
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+            <main class="p-6">
+
+                <h4 class="header-title">Welcome !</h4>
+
+                <div class="space-y-6">
+                    <div class="card">
+                        <div class="p-6">
+                            <div class="grid xl:grid-cols-4 sm:grid-cols-2">
+                                <div>
+                                    <div class="text-center xl:border-e border-gray-200 dark:border-slate-500/70 p-4">
+                                        <h2 class="text-3xl font-semibold mb-3">
+                                            <i class="text-primary mdi mdi-access-point-network me-2"></i>
+                                            8954
+                                        </h2>
+                                        <p>Lifetime total sales</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-center xl:border-e border-gray-200 dark:border-slate-500/70 p-5">
+                                        <h2 class="text-3xl font-semibold mb-3">
+                                            <i class="text-teal mdi mdi-cast-variant me-2"></i>
+                                            7841
+                                        </h2>
+                                        <p>Income amounts</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-center xl:border-e border-gray-200 dark:border-slate-500/70 p-5">
+                                        <h2 class="text-3xl font-semibold mb-3">
+                                            <i class="text-info mdi mdi-black-mesa me-2"></i>
+                                            6521
+                                        </h2>
+                                        <p>Total users</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="text-center p-5">
+                                        <h2 class="text-3xl font-semibold mb-3">
+                                            <i class="text-danger mdi mdi-cellphone-link me-2"></i>
+                                            325
+                                        </h2>
+                                        <p>Total visits</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="card">
+                            <div class="p-6">
+                                <h6 class="mb-4">Total Revenue</h6>
+                                <div class="text-center">
+                                    <ul class="flex items-center justify-center gap-3">
+                                        <li>
+                                            <p><i class="fa fa-circle mr-2 text-primary"></i>Series A</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-circle mr-2 text-gray-400"></i>Series B</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="dashboard-bar-stacked" class="morris-chart" dir="ltr" style="height: 300px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="p-6">
+                                <h6 class="mb-4">Sales Analytics</h6>
+                                <div class="text-center">
+                                    <ul class="flex items-center justify-center gap-3">
+                                        <li>
+                                            <p><i class="fa fa-circle mr-2 text-primary"></i>Mobiles</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-circle mr-2 text-info"></i>Tablets</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="dashboard-line-chart" class="morris-chart" dir="ltr" style="height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-6">
+                            <h6 class="mb-4">Contacts</h6>
+
+                            <div class="flex flex-col">
+                                <div class="-m-1.5 overflow-x-auto">
+                                    <div class="p-1.5 min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden">
+                                            <table class="min-w-full divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                <thead>
+                                                    <tr class="border-t border-b-2 border-gray-200 dark:border-slate-500/30">
+                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">
+                                                            <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                        </th>
+                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Name</th>
+                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Email</th>
+                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Products</th>
+                                                        <th scope="col" class="px-4 py-3 whitespace-nowrap text-start font-bold dark:text-white">Start Date</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="divide-y divide-gray-200 dark:divide-slate-500/30">
+                                                    <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-slate-600/40">
+                                                        <th class="px-4 py-3 text-start whitespace-nowrap">
+                                                            <div class="flex items-center gap-3">
+                                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                                <img src="assets/images/users/avatar-1.jpg" class="h-9 w-9 rounded-full">
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-4 py-3 whitespace-nowrap">Tomaslau</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">tomaslau@dummy.com</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">356</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">01/11/2003</td>
+                                                    </tr>
+                                                    <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-slate-600/40">
+                                                        <th class="px-4 py-3 text-start whitespace-nowrap">
+                                                            <div class="flex items-center gap-3">
+                                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                                <img src="assets/images/users/avatar-2.jpg" class="h-9 w-9 rounded-full">
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-4 py-3 whitespace-nowrap">Chadengle</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">chadengle@dummy.com</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">568</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">01/11/2003</td>
+                                                    </tr>
+                                                    <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-slate-600/40">
+                                                        <th class="px-4 py-3 text-start whitespace-nowrap">
+                                                            <div class="flex items-center gap-3">
+                                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                                <img src="assets/images/users/avatar-3.jpg" class="h-9 w-9 rounded-full">
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-4 py-3 whitespace-nowrap">Stillnotdavid</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">stillnotdavid@dummy.com</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">201</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">12/11/2003</td>
+                                                    </tr>
+                                                    <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-slate-600/40">
+                                                        <th class="px-4 py-3 text-start whitespace-nowrap">
+                                                            <div class="flex items-center gap-3">
+                                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                                <img src="assets/images/users/avatar-4.jpg" class="h-9 w-9 rounded-full">
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-4 py-3 whitespace-nowrap">Kurafire</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">kurafire@dummy.com</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">56</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">14/11/2003</td>
+                                                    </tr>
+                                                    <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-slate-600/40">
+                                                        <th class="px-4 py-3 text-start whitespace-nowrap">
+                                                            <div class="flex items-center gap-3">
+                                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                                <img src="assets/images/users/avatar-5.jpg" class="h-9 w-9 rounded-full">
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-4 py-3 whitespace-nowrap">Shahedk</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">shahedk@dummy.com</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">356</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">20/11/2003</td>
+                                                    </tr>
+                                                    <tr class="transition-all duration-300 hover:bg-gray-100 dark:hover:bg-slate-600/40">
+                                                        <th class="px-4 py-3 text-start whitespace-nowrap">
+                                                            <div class="flex items-center gap-3">
+                                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-default">
+                                                                <img src="assets/images/users/avatar-6.jpg" class="h-9 w-9 rounded-full">
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-4 py-3 whitespace-nowrap">Adhamdannaway</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">adhamdannaway@dummy.com</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">956</td>
+                                                        <td class="px-4 py-3 whitespace-nowrap">24/11/2003 </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+    <!-- init js -->
+    <script src="assets/js/pages/dashboard.init.js" type="module"></script>
+
+</body>
+
+</html>

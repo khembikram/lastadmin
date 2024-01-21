@@ -1,0 +1,56 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="relative bg-cover bg-center">
+        <div class="relative flex flex-col my-12 pt-12">
+            <div class="flex justify-center">
+                <div class="px-4">
+                    <div class="card overflow-hidden xl:w-[30rem] sm:w-96">
+                        <div class="p-9">
+
+                            <div class="mt-2 mb-6 text-center">
+                                <img src="assets/images/warming.svg" title="invite.svg" class="w-24 h-24 mx-auto">
+                                <h3 class="text-2xl font-normal mt-4">Your session has expired due to inactivity</h3>
+                            </div>
+
+                            <form action="#" class="py-2">
+                                <div class="mb-4">
+                                    <label class="mt-1 mb-2" for="emailaddress">Email address</label>
+                                    <input class="form-input" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="mt-1 mb-2" for="password">Password</label>
+                                    <input type="password" id="password" class="form-input" placeholder="Enter your password">
+                                </div>
+
+                                <div class="text-center mb-2">
+                                    <button class="btn bg-primary w-full text-white" type="submit"> Log In </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+    {{> footer-scripts}}
+
+</body>
+
+</html>

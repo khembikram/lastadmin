@@ -1,0 +1,838 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+                <div class="grid 2xl:grid-cols-2 grid-cols-1 gap-x-6 gap-y-12">
+                    <div class="2xl:col-span-2">
+                        <h4 class="header-title">Form Elements</h4>
+
+                        <div class="grid 2xl:grid-cols-2 2xl:gap-6 gap-4">
+                            <form class="space-y-4">
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-text">Text</label>
+                                    <div class="md:col-span-4">
+                                        <input type="text" id="example-text" name="example-text" class="form-input" value="Some text value...">
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-email">Email</label>
+                                    <div class="md:col-span-4">
+                                        <input type="email" id="example-email" name="example-email" class="form-input" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-password">Password</label>
+                                    <div class="md:col-span-4">
+                                        <input type="password" id="example-password" name="example-password" class="form-input" value="password">
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-placeholder">Placeholder</label>
+                                    <div class="md:col-span-4">
+                                        <input type="text" id="example-placeholder" name="example-placeholder" class="form-input" placeholder="placeholder">
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-textarea">Text area</label>
+                                    <div class="md:col-span-4">
+                                        <textarea rows="5" id="example-textarea" name="example-textarea" class="form-input"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="space-y-4">
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2">Readonly</label>
+                                    <div class="md:col-span-4 ">
+                                        <input type="text" class="form-input bg-gray-100 dark:bg-slate-500/30" readonly="" value="Readonly value">
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2">Disabled</label>
+                                    <div class="md:col-span-4 ">
+                                        <input type="text" class="form-input bg-gray-100 dark:bg-slate-500/30" disabled="" value="Disabled value">
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2">Static control</label>
+                                    <div class="md:col-span-4">
+                                        <p class="my-1">email@example.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-helping">Helping text</label>
+                                    <div class="md:col-span-4">
+                                        <input type="text" class="form-input" placeholder="Helping text" id="example-helping">
+                                        <span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+                                    </div>
+                                </div>
+
+                                <div class="grid md:grid-cols-5">
+                                    <label class="mt-1 mb-2" for="example-placeholder">Input Select</label>
+                                    <div class="md:col-span-4">
+                                        <div class="flex flex-col gap-3">
+                                            <select class="form-input">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+
+                                            <h6 class="font-13 mt-3">Multiple select</h6>
+                                            <select multiple="" class="form-input">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="header-title">Input States</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <form class="space-y-4">
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="state-success">Success</label>
+                                <div class="md:col-span-2">
+                                    <input type="text" id="state-success" name="state-success" class="border-success font-normal rounded block w-full text-sm focus:border-gray-300 focus:ring-0 dark:text-gray-400 dark:bg-slate-700" placeholder="...">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="state-warning">Warning</label>
+                                <div class="md:col-span-2">
+                                    <input type="text" id="state-warning" name="state-warning" class="border-warning font-normal rounded block w-full text-sm focus:border-gray-300 focus:ring-0 dark:text-gray-400 dark:bg-slate-700" placeholder="...">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="state-danger">Danger</label>
+                                <div class="md:col-span-2">
+                                    <input type="text" id="state-danger" name="state-danger" class="border-danger font-normal rounded block w-full text-sm focus:border-gray-300 focus:ring-0 dark:text-gray-400 dark:bg-slate-700" placeholder="...">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4 class="header-title">Input Sizes</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <form class="space-y-4">
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="example-input-small">Small</label>
+                                <div class="md:col-span-2">
+                                    <input type="text" id="example-input-small" name="example-input-small" class="form-input form-input-sm" placeholder=".input-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="example-input-normal">Normal</label>
+                                <div class="md:col-span-2">
+                                    <input type="text" id="example-input-normal" name="example-input-normal" class="form-input" placeholder="Normal">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="example-input-large">Large</label>
+                                <div class="md:col-span-2">
+                                    <input type="text" id="example-input-large" name="example-input-large" class="form-input form-input-lg" placeholder=".input-lg">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-4">
+                                <label class="mt-1 mb-2" for="example-input-normal">Grid Sizes</label>
+                                <div class="md:col-span-3 space-y-4">
+                                    <input type="text" id="example-input-normal" name="example-input-normal" class="form-input md:w-1/4 w-full" placeholder=".col-md-4">
+                                    <input type="text" id="example-input-normal" name="example-input-normal" class="form-input md:w-2/4 w-full" placeholder=".col-md-5">
+                                    <input type="text" id="example-input-normal" name="example-input-normal" class="form-input md:w-3/4 w-full" placeholder=".col-md-6">
+                                    <input type="text" id="example-input-normal" name="example-input-normal" class="form-input" placeholder=".col-md-7">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="2xl:col-span-2">
+                        <h4 class="header-title">Input groups</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <div class="grid 2xl:grid-cols-3 gap-6">
+                            <div>
+                                <h6 class="mb-4">Static</h6>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input1-group1" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <button type="button" class="btn bg-gray-100 dark:bg-slate-500/30 rounded-none cursor-default border border-gray-200 dark:border-slate-500/70 border-e-0">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <input type="text" id="example-input1-group1" name="example-input1-group1" class="form-input rounded-none" placeholder="Username">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input2-group1" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <input type="text" id="example-input2-group1" name="example-input2-group1" class="form-input rounded-none" placeholder="Email">
+                                            <button type="button" class="btn bg-gray-100 dark:bg-slate-500/30 rounded-none cursor-default border border-gray-200 dark:border-slate-500/70 border-s-0">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input3-group1" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <button type="button" class="btn bg-gray-100 dark:bg-slate-500/30 rounded-none cursor-default border border-gray-200 dark:border-slate-500/70 border-e-0">
+                                                <i class="fas fa-dollar-sign"></i>
+                                            </button>
+                                            <input type="text" id="example-input3-group1" name="example-input3-group1" class="form-input rounded-none" placeholder="...">
+                                            <button type="button" class="btn bg-gray-100 dark:bg-slate-500/30 rounded-none cursor-default border border-gray-200 dark:border-slate-500/70 border-s-0">
+                                                .00
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-4">Buttons</h6>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input1-group2" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <button type="button" class="btn bg-primary text-white rounded-none">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                            <input type="text" id="example-input1-group2" name="example-input1-group2" class="form-input rounded-none" placeholder="Search">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input2-group2" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-input rounded-none" placeholder="Email">
+                                            <button type="button" class="btn bg-primary text-white rounded-none">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input3-group2" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <button type="button" class="btn bg-primary text-white rounded-none">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </button>
+                                            <input type="text" id="example-input3-group2" name="example-input3-group2" class="form-input rounded-none" placeholder="...">
+                                            <button type="button" class="btn bg-primary text-white rounded-none">
+                                                <i class="fab fa-twitter"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-4">Dropdowns</h6>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input1-group2" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <div class="hs-dropdown relative inline-flex z-10">
+                                                <button type="button" class="hs-dropdown-toggle btn bg-primary text-white rounded-none">
+                                                    Action
+                                                    <i class="mdi mdi-chevron-down ms-2"></i>
+                                                </button>
+
+                                                <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-md border rounded border-gray-200 divide-y divide-gray-200">
+                                                    <div class="my-2 first:pt-0 last:pb-0">
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Action
+                                                        </a>
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Another action
+                                                        </a>
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Separated link
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <input type="text" id="example-input1-group2" name="example-input1-group2" class="form-input rounded-none" placeholder="Username">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input2-group2" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <input type="text" id="example-input2-group2" name="example-input2-group2" class="form-input rounded-none" placeholder="Email">
+
+                                            <div class="hs-dropdown relative inline-flex z-10">
+                                                <button type="button" class="hs-dropdown-toggle btn bg-primary text-white rounded-none">
+                                                    Action
+                                                    <i class="mdi mdi-chevron-down ms-2"></i>
+                                                </button>
+
+                                                <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-md border rounded border-gray-200 divide-y divide-gray-200">
+                                                    <div class="my-2 first:pt-0 last:pb-0">
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Action
+                                                        </a>
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Another action
+                                                        </a>
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Separated link
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="mt-1 mb-2" for="example-input3-group2" class="sr-only">Label</label>
+                                        <div class="flex rounded overflow-hidden">
+                                            <div class="inline-flex">
+                                                <button type="button" class="hs-dropdown-toggle btn bg-primary text-white rounded-none">
+                                                    Action
+                                                </button>
+                                                <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
+                                                    <button id="hs-split-dropdown" type="button" class="hs-dropdown-toggle relative -ml-[.3125rem] btn bg-primary text-white rounded-none">
+                                                        <i class="mdi mdi-chevron-down"></i>
+                                                    </button>
+
+                                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-md border rounded border-gray-200 divide-y divide-gray-200">
+                                                        <div class="my-2 first:pt-0 last:pb-0">
+                                                            <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                                Action
+                                                            </a>
+                                                            <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                                Another action
+                                                            </a>
+                                                            <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                                Separated link
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <input type="text" id="example-input3-group2" name="example-input3-group2" class="form-input rounded-none" placeholder="...">
+
+                                            <div class="hs-dropdown relative inline-flex">
+                                                <button type="button" class="hs-dropdown-toggle btn bg-primary text-white rounded-none">
+                                                    <i class="mdi mdi-chevron-down"></i>
+                                                </button>
+
+                                                <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-md border rounded border-gray-200 divide-y divide-gray-200">
+                                                    <div class="my-2 first:pt-0 last:pb-0">
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Action
+                                                        </a>
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Another action
+                                                        </a>
+                                                        <a class="flex items-center text-sm py-1.5 px-3 hover:bg-gray-100" href="#">
+                                                            Separated link
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="header-title">Basic example</h4>
+
+                        <form class="space-y-4">
+                            <div>
+                                <label class="mt-1 mb-2" for="InputEmail1">Email address</label>
+                                <input type="email" class="form-input" id="InputEmail1" placeholder="Enter email">
+                            </div>
+
+                            <div>
+                                <label class="mt-1 mb-2" for="InputPassword1">Password</label>
+                                <input type="password" class="form-input" id="InputPassword1" placeholder="Password">
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="form-checkbox rounded text-primary" id="checkbox-group-1">
+                                <label for="checkbox-group-1" class="text-sm">Remember me</label>
+                            </div>
+
+                            <button type="submit" class="btn bg-primary text-white">Submit</button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4 class="header-title">Horizontal form</h4>
+
+                        <form class="space-y-4">
+                            <div class="grid md:grid-cols-5">
+                                <label class="mt-1 mb-2" for="inputEmail3">Email</label>
+                                <div class="md:col-span-4">
+                                    <input type="email" id="inputEmail3" name="inputEmail3" class="form-input" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-5">
+                                <label class="mt-1 mb-2" for="inputPassword3">Password</label>
+                                <div class="md:col-span-4">
+                                    <input type="password" id="inputPassword3" name="inputPassword3" class="form-input" placeholder="password">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-5">
+                                <label class="mt-1 mb-2" for="inputPassword4">Re Password</label>
+                                <div class="md:col-span-4">
+                                    <input type="password" id="inputPassword4" name="inputPassword4" class="form-input" placeholder="Retype Password">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-5">
+                                <label for=""></label>
+                                <div class="md:col-span-4">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="form-checkbox rounded text-primary" id="checkbox-group-2">
+                                        <label for="checkbox-group-2" class="text-sm">Check me out !</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-5">
+                                <label for=""></label>
+                                <div class="md:col-span-4">
+                                    <button type="submit" class="btn bg-info text-white">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4 class="header-title">Select menu</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <select class="form-select mt-3">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h4 class="header-title">Checkboxes and radios</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <div class="space-y-4">
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" class="form-checkbox rounded text-primary" id="checkbox-group-3">
+                                    <label for="checkbox-group-3" class="text-sm">Check this custom checkbox</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input type="checkbox" class="form-checkbox rounded text-primary" id="checkbox-group-4">
+                                    <label for="checkbox-group-4" class="text-sm">Check this custom checkbox</label>
+                                </div>
+                            </div>
+
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" class="form-radio text-primary" name="radio-group" id="radio-group-1">
+                                    <label for="radio-group-1" class="text-sm">Toggle this custom radio</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" class="form-radio text-primary" name="radio-group" id="radio-group-2">
+                                    <label for="radio-group-2" class="text-sm">Or toggle this other custom radio</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="2xl:col-span-2">
+                        <h4 class="header-title">Switches</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" id="switch-group-1" class="form-switch text-primary">
+                                <label for="switch-group-1" class="text-sm">Toggle this switch element</label>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" id="switch-group-2" class="form-switch text-primary" disabled>
+                                <label for="switch-group-2" class="text-sm">Disabled switch element</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="2xl:col-span-2">
+                        <h4 class="header-title">Checkbox and Radio</h4>
+                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                        <div class="grid 2xl:grid-cols-3 gap-x-6 gap-y-12">
+                            <div>
+                                <h6 class="mb-4">Basic</h6>
+
+                                <div class="space-y-6">
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                                        <div class="space-y-2">
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded" id="checkbox-1">
+                                                <label for="checkbox-1" class="text-sm">Default</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-teal" id="checkbox-teal">
+                                                <label for="checkbox-teal" class="text-sm">Teal</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-primary" id="checkbox-primary" checked>
+                                                <label for="checkbox-primary" class="text-sm">Primary</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-success" id="checkbox-success">
+                                                <label for="checkbox-success" class="text-sm">Success</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-info" id="checkbox-info">
+                                                <label for="checkbox-info" class="text-sm">Info</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-warning" id="checkbox-warning" checked>
+                                                <label for="checkbox-warning" class="text-sm">Warning</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-danger" id="checkbox-danger" checked>
+                                                <label for="checkbox-danger" class="text-sm">Danger</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded text-dark" id="checkbox-dark">
+                                                <label for="checkbox-dark" class="text-sm">Dark</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs</p>
+
+                                        <div class="flex flex-col gap-2">
+                                            <input type="checkbox" class="form-checkbox rounded">
+                                            <input type="checkbox" class="form-checkbox rounded text-primary" checked>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs</p>
+
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded inline-block" id="checkbox-inline-1">
+                                                <label for="checkbox-inline-1" class="text-sm">Inline One</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded inline-block text-success" id="checkbox-inline-teal" checked>
+                                                <label for="checkbox-inline-teal" class="text-sm">Inline Two</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded inline-block text-pink" id="checkbox-inline-primary">
+                                                <label for="checkbox-inline-primary" class="text-sm">Inline Three</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-4">Circled</h6>
+
+                                <div class="space-y-6">
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                                        <div class="space-y-2">
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-teal" id="checkbox-circled-teal" checked>
+                                                <label for="checkbox-circled-teal" class="text-sm">Teal</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full" id="checkbox-circled-1">
+                                                <label for="checkbox-circled-1" class="text-sm">Default</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-info" id="checkbox-circled-info" checked>
+                                                <label for="checkbox-circled-info" class="text-sm">Info</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-primary" id="checkbox-circled-primary">
+                                                <label for="checkbox-circled-primary" class="text-sm">Primary</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-success" id="checkbox-circled-success" checked>
+                                                <label for="checkbox-circled-success" class="text-sm">Success</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-warning" id="checkbox-circled-warning">
+                                                <label for="checkbox-circled-warning" class="text-sm">Warning</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-danger" id="checkbox-circled-danger" checked>
+                                                <label for="checkbox-circled-danger" class="text-sm">Danger</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full text-dark" id="checkbox-circled-dark" checked>
+                                                <label for="checkbox-circled-dark" class="text-sm">Dark</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs</p>
+
+                                        <div class="flex flex-col gap-2">
+                                            <input type="checkbox" class="form-checkbox rounded-full">
+                                            <input type="checkbox" class="form-checkbox rounded-full text-primary" checked>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs</p>
+
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full inline-block" id="checkbox-circled-inline-1">
+                                                <label for="checkbox-circled-inline-1" class="text-sm">Inline One</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full inline-block text-success" id="checkbox-circled-inline-teal" checked>
+                                                <label for="checkbox-circled-inline-teal" class="text-sm">Inline Two</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="checkbox" class="form-checkbox rounded-full inline-block text-pink" id="checkbox-circled-inline-primary">
+                                                <label for="checkbox-circled-inline-primary" class="text-sm">Inline Three</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-4">Disabled</h6>
+                                <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="form-checkbox opacity-50 rounded" id="checkbox-circled-default1" disabled>
+                                        <label for="checkbox-circled-Default1" class="text-sm">Can't check this</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="form-checkbox opacity-50 rounded-full text-warning" id="checkbox-circled-warning1" disabled checked>
+                                        <label for="checkbox-circled-warning1" class="text-sm">And this</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="form-checkbox opacity-50 rounded text-info" id="checkbox-circled-info1" disabled checked>
+                                        <label for="checkbox-circled-info1" class="text-sm">Can't check this</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="form-checkbox opacity-50 rounded text-primary" id="checkbox-circled-primary1" disabled checked>
+                                        <label for="checkbox-circled-primary1" class="text-sm">This too</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="checkbox" class="form-checkbox opacity-50 rounded-full text-danger" id="checkbox-circled-danger1" disabled checked>
+                                        <label for="checkbox-circled-danger1" class="text-sm">Danger</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-4">Basic</h6>
+
+                                <div class="space-y-6">
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                                        <div class="flex sm:gap-40 flex-wrap gap-6">
+                                            <div class="space-y-2">
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio" name="radio-default" id="radio-default" checked>
+                                                    <label for="radio-default" class="text-sm">Default</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-teal" name="radio-default" id="radio-teal">
+                                                    <label for="radio-teal" class="text-sm">Teal</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-primary" name="radio-default" id="radio-primary">
+                                                    <label for="radio-primary" class="text-sm">Primary</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-success" name="radio-default" id="radio-success">
+                                                    <label for="radio-success" class="text-sm">Success</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-info" name="radio-default" id="radio-info">
+                                                    <label for="radio-info" class="text-sm">Info</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-warning" name="radio-default" id="radio-warning">
+                                                    <label for="radio-warning" class="text-sm">Warning</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-danger" name="radio-default" id="radio-danger">
+                                                    <label for="radio-danger" class="text-sm">Danger</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-dark" name="radio-default" id="radio-dark">
+                                                    <label for="radio-dark" class="text-sm">Dark</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="space-y-2">
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio" id="radio-default-1" checked>
+                                                    <label for="radio-default-1" class="text-sm">Default</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-primary" id="radio-primary-1">
+                                                    <label for="radio-primary-1" class="text-sm">Primary</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-success" id="radio-success-1" checked>
+                                                    <label for="radio-success-1" class="text-sm">Success</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-info" id="radio-info-1" checked>
+                                                    <label for="radio-info-1" class="text-sm">Info</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-danger" id="radio-danger-1">
+                                                    <label for="radio-danger-1" class="text-sm">Danger</label>
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                    <input type="radio" class="form-radio text-warning" id="radio-warning-1" checked>
+                                                    <label for="radio-warning-1" class="text-sm">Warning</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs</p>
+
+                                        <div class="flex flex-col gap-2">
+                                            <input type="radio" class="form-radio">
+                                            <input type="radio" class="form-radio text-primary" checked>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-header">Use different button styles for actions in forms, dialogs</p>
+
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" class="form-radio inline-block" name="radio-inline-default" id="radio-inline-default">
+                                                <label for="radio-inline-default" class="text-sm">Inline One</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" class="form-radio inline-block text-success" name="radio-inline-default" id="radio-inline-teal" checked>
+                                                <label for="radio-inline-teal" class="text-sm">Inline Two</label>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" class="form-radio inline-block text-pink" name="radio-inline-default" id="radio-inline-primary">
+                                                <label for="radio-inline-primary" class="text-sm">Inline Three</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="mb-4">Disabled</h6>
+                                <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" class="form-radio opacity-50 text-danger" id="radio-circled-default2" disabled checked>
+                                        <label for="radio-circled-Default2" class="text-sm">Next</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" class="form-radio opacity-50 text-dark" id="radio-circled-warning2" disabled checked>
+                                        <label for="radio-circled-warning2" class="text-sm">One</label>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <input type="radio" class="form-radio opacity-50 text-info" id="radio-circled-info2" disabled checked>
+                                        <label for="radio-circled-info2" class="text-sm">One</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+</body>
+
+</html>

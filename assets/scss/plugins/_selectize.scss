@@ -1,0 +1,116 @@
+//
+// Selectize.scss
+//
+
+.selectize-input {
+    @apply shadow-none bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-500/70 text-gray-600      ;
+
+    > input {
+        @apply shadow-none bg-white dark:bg-slate-700;
+    }
+
+    &.focus {
+        @apply shadow-none bg-white dark:bg-slate-700;
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+    &.input-active {
+        @apply bg-white dark:bg-slate-700 focus:bg-transparent;
+    }
+}
+
+.selectize-input,
+.selectize-control.single .selectize-input.input-active {
+    @apply bg-white dark:bg-slate-700 focus:bg-transparent;
+}
+
+.selectize-input.full {
+    @apply border border-gray-200 dark:border-slate-500/70 focus:bg-transparent;
+}
+
+.selectize-control {
+    &.multi {
+        .selectize-input > div {
+           @apply bg-primary text-white;
+            
+            > a {
+                @apply text-white;
+            }
+        
+            &.active {
+                @apply bg-primary text-white;
+                > a {
+                    @apply text-primary;
+                }
+            }
+        }
+    }    
+}
+
+.selectize-dropdown {
+    padding: .3rem;
+    @apply text-gray-400 shadow bg-white dark:bg-slate-700 border border-solid border-gray-200 dark:border-slate-500/70 rounded;
+    background-clip: padding-box;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    margin: 0;
+    font-size: .875rem;
+    position: absolute;
+    z-index: 1000;
+
+    &.show {
+        top: 100%!important;
+    }
+
+    &.active {
+        @apply text-gray-500;
+    }
+
+    .scientific {
+        @apply text-gray-600;
+    }
+
+    .option, 
+    .optgroup-header {
+        @apply py-1 px-0 font-normal text-gray-500;;
+        display: block;
+        width: 100%;
+        clear: both;
+        cursor: pointer;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+    
+        &:hover, &:focus {
+            @apply text-gray-600 bg-transparent dark:text-gray-300;
+        }
+    }
+
+    &.plugin-optgroup_columns {
+        .optgroup {
+            @apply border-e-gray-200 dark:border-e-gray-600;
+        }
+    }
+    
+    .optgroup:before {
+        @apply bg-transparent;
+    }
+}
+
+.selectize-dropdown-header {
+    border-bottom: 1px solid transparent;
+    @apply bg-gray-200 text-gray-500 dark:bg-gray-500 dark:text-gray-300;
+
+    text-decoration: none;
+    .selectize-dropdown-header-close {
+        right: 12px;
+        left: auto;
+    }
+}
+
+.selectize-dropdown-content {
+    > div {
+        @apply bg-transparent text-gray-400;
+    }
+}

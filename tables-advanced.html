@@ -1,0 +1,115 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+                <h4 class="header-title">Data Tables</h4>
+
+                <div class="space-y-12">
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Basic</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-gridjs"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Pagination</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-pagination"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Search</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-search"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Sorting</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-sorting"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Loading State</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-loading-state"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Fixed Header</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-fixed-header"></div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <h6 class="mb-2">Hidden Columns</h6>
+                            <p class="sub-header">Use different button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                        </div>
+
+                        <div id="table-hidden-column"></div>
+                    </div>
+                </div>
+            </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+<!--<script src="assets/libs/gridjs/gridjs.umd.js"></script>-->
+
+    <script src="assets/js/pages/table-gridjs.init.js" type="module"></script>
+
+</body>
+
+</html>

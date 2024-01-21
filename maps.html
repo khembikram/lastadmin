@@ -1,0 +1,113 @@
+{{> main}}
+<head>
+
+    {{> title-meta title="Contacts"}}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    {{> sidenav}}
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="page-content bg-white dark:bg-slate-700">
+
+        {{> topbar}}
+
+
+        <main class="p-6">
+
+            <div class="card">
+                <div class="p-6">
+                    <div class="space-y-12">
+
+                        <div>
+                            <h4 class="header-title mb-6">Google Maps</h4>
+
+                            <div class="grid lg:grid-cols-2 gap-6">
+                                <div>
+                                    <h6 class="mb-4">Default Buttons</h6>
+
+                                    <div class="gmaps" id="gmaps-basic"></div>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-4">Markers</h6>
+
+                                    <div class="gmaps" id="gmaps-markers"></div>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-4">Street View Panoramas</h6>
+
+                                    <div class="gmaps" id="panorama"></div>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-4">Map Types </h6>
+
+                                    <div class="gmaps" id="gmaps-types"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="header-title mb-6">Vector Maps</h4>
+
+                            <div class="grid lg:grid-cols-2 gap-6">
+                                <div class="col-span-2">
+                                    <div>
+                                        <h6 class="mb-4">World Vector Map</h6>
+
+                                        <div id="world-map-markers" style="height: 360px"></div>
+                                    </div>
+                                </div>
+   <div class="col-span-2">
+                                    <div>
+                                        <h6 class="mb-4">World Vector Map</h6>
+
+                                        <div id="world-merc-map-markers" style="height: 360px"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        {{> footer}}
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+</div>
+
+
+{{> customizer}}
+
+{{> footer-scripts}}
+
+
+<script src="http://maps.google.com/maps/api/js"></script>
+
+
+<script src="assets/js/pages/maps-vector.init.js" type="module"></script>
+<script src="assets/js/pages/maps-google.init.js" type="module"></script>
+
+
+</body>
+
+</html>

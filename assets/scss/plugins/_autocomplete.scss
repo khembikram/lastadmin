@@ -1,0 +1,42 @@
+//
+// autocomplete.scss
+//
+
+.autocomplete-suggestions {
+    cursor: default;
+    overflow: auto;
+    max-height: 200px !important;
+    @apply border border-solid border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-800 shadow;
+}
+
+.autocomplete-suggestion {
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-no-suggestion {
+    padding: 5px;
+}
+
+.autocomplete-selected {
+    cursor: pointer;
+    @apply bg-gray-200 dark:bg-gray-600;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: bold;
+    @apply text-gray-900 dark:text-gray-100;
+}
+
+.autocomplete-group {
+    padding: 5px;
+    @apply font-medium;
+}
+
+.autocomplete-group strong {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    @apply text-gray-900 dark:text-gray-100;
+}
